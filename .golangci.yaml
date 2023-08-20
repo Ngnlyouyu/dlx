@@ -1,0 +1,29 @@
+# golangci-lint version 1.52.2
+run:
+  timeout: 5m
+linters:
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - gosec
+linters-settings:
+  gosec:
+    includes:
+      - G102
+      - G106
+      - G108
+      - G109
+      - G111
+      - G112
+      - G201
+      - G203
+
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - gosec
