@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"dlx/cmd/download"
 	"fmt"
 
 	"github.com/spf13/cobra"
@@ -22,9 +23,7 @@ var (
 	downloadCmd = &cobra.Command{
 		Use:   "download",
 		Short: "download command",
-		Run: func(cmd *cobra.Command, args []string) {
-			fmt.Println("download stuff")
-		},
+		Run:   download.Download,
 	}
 )
 
