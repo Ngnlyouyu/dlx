@@ -10,6 +10,8 @@ linters:
     - staticcheck
     - unused
     - gosec
+    - stylecheck
+    - unconvert
 linters-settings:
   gosec:
     includes:
